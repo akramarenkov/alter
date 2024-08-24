@@ -9,14 +9,11 @@ goos: linux
 goarch: amd64
 pkg: github.com/akramarenkov/alter/bytes
 cpu: AMD Ryzen 5 3600 6-Core Processor              
-BenchmarkSplitStd
-BenchmarkSplitStd-12              8448201           139.4 ns/op         128 B/op           1 allocs/op
-BenchmarkSplit
-BenchmarkSplit-12                 9370696           129.5 ns/op         128 B/op           1 allocs/op
-BenchmarkSplitPreparer
-BenchmarkSplitPreparer-12        32791620            37.25 ns/op          0 B/op           0 allocs/op
+BenchmarkSplitStd-12              7953026           157.5 ns/op         128 B/op           1 allocs/op
+BenchmarkSplit-12                 8095598           144.5 ns/op         128 B/op           1 allocs/op
+BenchmarkSplitPreparer-12        33560821            36.94 ns/op          0 B/op           0 allocs/op
 PASS
-ok      github.com/akramarenkov/alter/bytes    4.889s
+ok      github.com/akramarenkov/alter/bytes    4.767s
 ```
 
 ### Usage
