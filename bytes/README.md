@@ -42,7 +42,6 @@ func main() {
 
     fmt.Println(bytes.Split([]byte("1 2 3 4 5"), []byte(" ")))
     fmt.Println(bytes.Split([]byte("1 2 3 4 5"), []byte(" "), preparer))
-
     // Output:
     // [[49] [50] [51] [52] [53]]
     // [[49] [50] [51] [52] [53]]

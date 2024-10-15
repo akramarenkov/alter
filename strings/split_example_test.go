@@ -19,7 +19,6 @@ func ExampleSplit() {
 
 	fmt.Println(strings.Split("1 2 3 4 5", " "))
 	fmt.Println(strings.Split("1 2 3 4 5", " ", preparer))
-
 	// Output:
 	// [1 2 3 4 5]
 	// [1 2 3 4 5]
