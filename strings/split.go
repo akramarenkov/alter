@@ -35,7 +35,7 @@ func Split(input, separator string, preparer ...Preparer) []string {
 	}
 
 	for id := 0; ; id++ {
-		// in case of preparer returned output slice of length less than requested
+		// In case of preparer returned output slice of length less than requested
 		if id >= len(output)-1 {
 			output[id] = input
 			return output
@@ -68,7 +68,7 @@ func splitByUTF8(input string, preparers []Preparer) []string {
 	id := 0
 
 	for ; len(input) != 0; id++ {
-		// in case of preparer returned output slice of length less than requested
+		// In case of preparer returned output slice of length less than requested
 		if id >= len(output)-1 {
 			output[id] = input
 			return output

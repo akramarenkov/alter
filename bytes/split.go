@@ -33,7 +33,7 @@ func Split(input, separator []byte, preparer ...Preparer) [][]byte {
 	}
 
 	for id := 0; ; id++ {
-		// in case of preparer returned output slice of length less than requested
+		// In case of preparer returned output slice of length less than requested
 		if id >= len(output)-1 {
 			output[id] = input
 			return output
@@ -66,7 +66,7 @@ func splitByUTF8(input []byte, preparers []Preparer) [][]byte {
 	id := 0
 
 	for ; len(input) != 0; id++ {
-		// in case of preparer returned output slice of length less than requested
+		// In case of preparer returned output slice of length less than requested
 		if id >= len(output)-1 {
 			output[id] = input
 			return output
