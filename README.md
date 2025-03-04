@@ -6,7 +6,8 @@
 
 ## Purpose
 
-Library with some functionality similar to the functionality from the standard library, but changed for some reasons
+Library with some functionality similar to the functionality from the standard
+ library, but changed for some reasons
 
 ## Packages
 
