@@ -424,15 +424,15 @@ func BenchmarkSplitStd(b *testing.B) {
 		"5",
 	}
 
-	var splitted []string
+	var split []string
 
 	for range b.N {
-		splitted = strings.Split(input, separator)
+		split = strings.Split(input, separator)
 	}
 
 	b.StopTimer()
 
-	require.Equal(b, expected, splitted)
+	require.Equal(b, expected, split)
 }
 
 func BenchmarkSplit(b *testing.B) {
@@ -446,15 +446,15 @@ func BenchmarkSplit(b *testing.B) {
 		"5",
 	}
 
-	var splitted []string
+	var split []string
 
 	for range b.N {
-		splitted = Split(input, separator)
+		split = Split(input, separator)
 	}
 
 	b.StopTimer()
 
-	require.Equal(b, expected, splitted)
+	require.Equal(b, expected, split)
 }
 
 func BenchmarkSplitPreparer(b *testing.B) {
@@ -474,13 +474,13 @@ func BenchmarkSplitPreparer(b *testing.B) {
 		return buffer
 	}
 
-	var splitted []string
+	var split []string
 
 	for range b.N {
-		splitted = Split(input, separator, preparer)
+		split = Split(input, separator, preparer)
 	}
 
 	b.StopTimer()
 
-	require.Equal(b, expected, splitted)
+	require.Equal(b, expected, split)
 }

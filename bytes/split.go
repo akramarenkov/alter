@@ -53,7 +53,7 @@ func Split(input, separator []byte, preparer ...Preparer) [][]byte {
 	}
 }
 
-// Invalid UTF-8 sequences are splitted to separated bytes.
+// Invalid UTF-8 sequences are split to separated bytes.
 func splitByUTF8(input []byte, preparers []Preparer) [][]byte {
 	output := prepare(utf8.RuneCount(input), preparers)
 
